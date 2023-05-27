@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML File with Functions</title>
+  <script>
+    // Function to change the text color
+    function changeColor() {
+      var textElement = document.getElementById("text");
+      textElement.style.color = "blue";
+    }
+
+    // Function to display an alert
+    function showAlert() {
+      alert("Hello, world!");
+    }
+
+    // Function to toggle the visibility of an element
+    function toggleElement() {
+      var element = document.getElementById("toggle");
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>HTML File with Functions</h1>
+  <p id="text">This is a paragraph.</p>
+  <button onclick="changeColor()">Change Color</button>
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="toggleElement()">Toggle Element</button>
+  <div id="toggle" style="display: none;">
+    <p>This element can be toggled.</p>
+  </div>
+</body>
+</html>
